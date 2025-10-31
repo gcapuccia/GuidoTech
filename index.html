@@ -20,382 +20,468 @@
 </head>
 
 <body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
-            <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
-                <div class="layout-container flex h-full grow flex-col">
-                    <div class="flex flex-1 justify-center">
-                        <div class="layout-content-container flex flex-col w-full max-w-5xl">
-                            <header
-                                class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200/50 dark:border-white/10 px-6 sm:px-10 py-3 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
-                                <div class="flex items-center gap-4 text-gray-900 dark:text-white">
-                                    <div class="size-5 text-primary">
-                                        <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                                            <path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z"
-                                                fill="currentColor" fill-rule="evenodd"></path>
-                                        </svg>
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <div class="flex flex-1 justify-center">
+                <div class="layout-content-container flex flex-col w-full max-w-5xl">
+                    <header
+                        class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200/50 dark:border-white/10 px-6 sm:px-10 py-3 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+                        <div class="flex items-center gap-4 text-gray-900 dark:text-white">
+                            <div class="size-5 text-primary">
+                                <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">GuidoTech</h2>
+                        </div>
+                        <div class="hidden sm:flex flex-1 justify-end gap-8">
+                            <div class="flex items-center gap-9">
+                                <a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors"
+                                    href="#experience">Sobre Mi</a>
+                                <a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors"
+                                    href="#projects">Proyectos</a>
+                                <a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors"
+                                    href="#pricing">Precios</a>
+                                <a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors"
+                                    href="#contact">Contacto</a>
+                            </div>
+                        </div>
+                    </header>
+                    <main class="flex flex-col gap-12 md:gap-16 px-6 sm:px-10 py-10 md:py-16">
+                        <section class="@container" id="hero">
+                            <div
+                                class="flex flex-col gap-6 @[480px]:gap-8 @[864px]:flex-row-reverse @[864px]:items-center">
+                                <div class="w-full flex-shrink-0 @[864px]:max-w-xs">
+                                    <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                                        data-alt="Professional headshot of John Doe"
+                                        style='background-image: url("guidotech.png");'>
                                     </div>
-                                    <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">GuidoTech</h2>
                                 </div>
-                                <div class="hidden sm:flex flex-1 justify-end gap-8">
-                                    <div class="flex items-center gap-9">
-                                        <a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors"
-                                            href="#experience">Sobre Mi</a>
-                                        <a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors"
-                                            href="#projects">Proyectos</a>
-                                        <a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors"
-                                            href="#pricing">Precios</a>
-                                        <a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors"
-                                            href="#contact">Contacto</a>
-                                    </div>
-                                </div>
-                            </header>
-                            <main class="flex flex-col gap-12 md:gap-16 px-6 sm:px-10 py-10 md:py-16">
-                                <section class="@container" id="hero">
-                                    <div
-                                        class="flex flex-col gap-6 @[480px]:gap-8 @[864px]:flex-row-reverse @[864px]:items-center">
-                                        <div class="w-full flex-shrink-0 @[864px]:max-w-xs">
-                                            <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
-                                                data-alt="Professional headshot of John Doe"
-                                                style='background-image: url("guidotech.png");'>
-                                            </div>
-                                        </div>
-                                        <div class="flex flex-col gap-6 @[480px]:gap-8 @[864px]:justify-center">
-                                            <div class="flex flex-col gap-2 text-left">
-                                                <h1
-                                                    class="text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] text-gray-900 dark:text-white">
-                                                    GuidoTech - Soluciones Tecnologicas Eficientes
-                                                </h1>
-                                                <h2
-                                                    class="text-base font-normal leading-normal @[480px]:text-lg text-gray-600 dark:text-gray-400">
-                                                    🚀 Mantenimiento, Optimización y Armados de PC
-                                                    💻 Desarrollo Páginas y Apps Webs
-                                                    🧩 Diseño y Impresiones 3D 
-                                                    📍 Zona sur | 🌐 DM para colaborar
-                                                    <!--💻 Desarrollo Páginas y Apps Webs
+                                <div class="flex flex-col gap-6 @[480px]:gap-8 @[864px]:justify-center">
+                                    <div class="flex flex-col gap-2 text-left">
+                                        <h1
+                                            class="text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] text-gray-900 dark:text-white">
+                                            GuidoTech - Soluciones Tecnologicas Eficientes
+                                        </h1>
+                                        <h2
+                                            class="text-base font-normal leading-normal @[480px]:text-lg text-gray-600 dark:text-gray-400">
+                                            🚀 Mantenimiento, Optimización y Armados de PC
+                                            💻 Desarrollo Páginas y Apps Webs
+                                            🧩 Diseño y Impresiones 3D
+                                            📍 Zona sur | 🌐 DM para colaborar
+                                            <!--💻 Desarrollo Páginas y Apps Webs
                                                     🧩 Diseño y Impresiones 3D
                                                       -->
-                                                </h2>
-                                            </div>
-                                            <div class="flex flex-col sm:flex-row gap-4">
-                                                <a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:opacity-90 transition-opacity"
-                                                    href="https://www.instagram.com/guidotech_/"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
-                   
-                                                        <rect width="14.5" height="14.5" x="4.75" y="4.75" stroke="#0A0A30" stroke-width="1.5" rx="4.25" />
-                                                        <rect width="6" height="6" x="9" y="9" stroke="#265BFF" stroke-width="1.5" rx="3"
-                                                            style="animation:instagram 2s linear infinite both;transform-origin:center center" />
-                                                        <circle cx="16" cy="8" r="1" fill="#0A0A30" />
-                                                    </svg>
-                                                    <span class="truncate">Instagram</span>
-                                                </a>
-                                                <a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:bg-gray-300 dark:hover:bg-white/20 transition-colors"
-                                                    href="https://wa.me/5491150400520"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
-                                                        <style>
-                                                            @keyframes phone {
-                                                    
-                                                                0%,
-                                                                to {
-                                                                    transform: rotate(0deg);
-                                                                    transform-origin: 0 100%
-                                                                }
-                                                    
-                                                                10%,
-                                                                90% {
-                                                                    transform: rotate(2deg)
-                                                                }
-                                                    
-                                                                20%,
-                                                                40%,
-                                                                60% {
-                                                                    transform: rotate(-4deg)
-                                                                }
-                                                    
-                                                                30%,
-                                                                50%,
-                                                                70% {
-                                                                    transform: rotate(4deg)
-                                                                }
-                                                    
-                                                                80% {
-                                                                    transform: rotate(-2deg)
-                                                                }
-                                                            }
-                                                        </style>
-                                                        <path fill="#0A0A30"
-                                                            d="M15.758 19a10.761 10.761 0 01-7.603-3.162A10.805 10.805 0 015 8.22c0-.854.339-1.673.941-2.277A3.21 3.21 0 018.214 5c.18-.001.36.015.537.05.172.024.34.067.503.125a.699.699 0 01.455.525l.957 4.2a.7.7 0 01-.182.644c-.09.098-.098.105-.957.553a6.93 6.93 0 003.402 3.423c.454-.868.461-.875.559-.966a.699.699 0 01.643-.182l4.191.959a.699.699 0 01.503.455A3.046 3.046 0 0119 15.829a3.223 3.223 0 01-.968 2.255 3.21 3.21 0 01-2.274.916zM8.215 6.4a1.822 1.822 0 00-1.817 1.82 9.396 9.396 0 002.744 6.63 9.36 9.36 0 006.617 2.75 1.821 1.821 0 001.817-1.82v-.231l-3.242-.75-.202.386c-.315.609-.545 1.05-1.132.812a8.276 8.276 0 01-5.016-5.047c-.251-.546.224-.798.824-1.113l.385-.189L8.444 6.4h-.23z"
-                                                            style="animation:phone 1.5s cubic-bezier(1,.01,.75,2.17) both infinite" />
-                                                    </svg>
-                                                    <span class="truncate">WhatsApp</span>
-                                                </a>
-                                            </div>
-                                        </div>
+                                        </h2>
                                     </div>
-                                </section>
-                                <section class="flex flex-col items-center gap-8 text-center" id="experience">
-                                    <div class="flex flex-col gap-2">
-                                        <!--<h2
+                                    <div class="flex flex-col sm:flex-row gap-4">
+                                        <a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:opacity-90 transition-opacity"
+                                            href="https://www.instagram.com/guidotech_/"><svg viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+
+                                                <rect width="14.5" height="14.5" x="4.75" y="4.75" stroke="#0A0A30"
+                                                    stroke-width="1.5" rx="4.25" />
+                                                <rect width="6" height="6" x="9" y="9" stroke="#265BFF"
+                                                    stroke-width="1.5" rx="3"
+                                                    style="animation:instagram 2s linear infinite both;transform-origin:center center" />
+                                                <circle cx="16" cy="8" r="1" fill="#0A0A30" />
+                                            </svg>
+                                            <span class="truncate">Instagram</span>
+                                        </a>
+                                        <a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:bg-gray-300 dark:hover:bg-white/20 transition-colors"
+                                            href="https://wa.me/5491150400520"><svg viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                                                <style>
+                                                    @keyframes phone {
+
+                                                        0%,
+                                                        to {
+                                                            transform: rotate(0deg);
+                                                            transform-origin: 0 100%
+                                                        }
+
+                                                        10%,
+                                                        90% {
+                                                            transform: rotate(2deg)
+                                                        }
+
+                                                        20%,
+                                                        40%,
+                                                        60% {
+                                                            transform: rotate(-4deg)
+                                                        }
+
+                                                        30%,
+                                                        50%,
+                                                        70% {
+                                                            transform: rotate(4deg)
+                                                        }
+
+                                                        80% {
+                                                            transform: rotate(-2deg)
+                                                        }
+                                                    }
+                                                </style>
+                                                <path fill="#0A0A30"
+                                                    d="M15.758 19a10.761 10.761 0 01-7.603-3.162A10.805 10.805 0 015 8.22c0-.854.339-1.673.941-2.277A3.21 3.21 0 018.214 5c.18-.001.36.015.537.05.172.024.34.067.503.125a.699.699 0 01.455.525l.957 4.2a.7.7 0 01-.182.644c-.09.098-.098.105-.957.553a6.93 6.93 0 003.402 3.423c.454-.868.461-.875.559-.966a.699.699 0 01.643-.182l4.191.959a.699.699 0 01.503.455A3.046 3.046 0 0119 15.829a3.223 3.223 0 01-.968 2.255 3.21 3.21 0 01-2.274.916zM8.215 6.4a1.822 1.822 0 00-1.817 1.82 9.396 9.396 0 002.744 6.63 9.36 9.36 0 006.617 2.75 1.821 1.821 0 001.817-1.82v-.231l-3.242-.75-.202.386c-.315.609-.545 1.05-1.132.812a8.276 8.276 0 01-5.016-5.047c-.251-.546.224-.798.824-1.113l.385-.189L8.444 6.4h-.23z"
+                                                    style="animation:phone 1.5s cubic-bezier(1,.01,.75,2.17) both infinite" />
+                                            </svg>
+                                            <span class="truncate">WhatsApp</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="flex flex-col items-center gap-8 text-center" id="experience">
+                            <div class="flex flex-col gap-2">
+                                <!--<h2
                                             class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">🚀 Soluciones Tecnologicas
                                             </h2>
                                          <p class="text-gray-600 dark:text-gray-400 max-w-2xl">🚀 Mantenimiento, Optimización y Armados de PC
                                         💻 Desarrollo Páginas y Apps Webs
                                         🧩 Diseño y Impresiones 3D</p> -->
-                                    </div>
-                                    <div class="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 text-left">
-                                        <div class="flex flex-col gap-6">
-                                            <h3
-                                                class="text-gray-900 dark:text-white text-lg font-semibold leading-tight tracking-[-0.015em]">
-                                                Experiencia</h3>
-                                            <div class="grid grid-cols-[40px_1fr] gap-x-2">
-                                                <div class="flex flex-col items-center gap-1 pt-3">
-                                                    <div class="text-gray-900 dark:text-white"><span
-                                                            class="material-symbols-outlined">work</span></div>
-                                                    <div class="w-[1.5px] bg-gray-300 dark:bg-gray-700 h-2 grow"></div>
-                                                </div>
-                                                <div class="flex flex-1 flex-col py-3">
-                                                    <p
-                                                        class="text-base font-medium leading-normal text-gray-900 dark:text-white">
-                                                        Senior Software Engineer</p>
-                                                    <p
-                                                        class="text-base font-normal leading-normal text-gray-500 dark:text-gray-400">
-                                                        Tech Solutions Inc. | 2020 - Present</p>
-                                                </div>
-                                                <div class="flex flex-col items-center gap-1">
-                                                    <div class="w-[1.5px] bg-gray-300 dark:bg-gray-700 h-2"></div>
-                                                    <div class="text-gray-900 dark:text-white"><span
-                                                            class="material-symbols-outlined">work</span></div>
-                                                    <div class="w-[1.5px] bg-gray-300 dark:bg-gray-700 h-2 grow"></div>
-                                                </div>
-                                                <div class="flex flex-1 flex-col py-3">
-                                                    <p
-                                                        class="text-base font-medium leading-normal text-gray-900 dark:text-white">
-                                                        Mid-Level Developer</p>
-                                                    <p
-                                                        class="text-base font-normal leading-normal text-gray-500 dark:text-gray-400">
-                                                        Web Innovators | 2018 - 2020</p>
-                                                </div>
-                                                <div class="flex flex-col items-center gap-1 pb-3">
-                                                    <div class="w-[1.5px] bg-gray-300 dark:bg-gray-700 h-2"></div>
-                                                    <div class="text-gray-900 dark:text-white"><span
-                                                            class="material-symbols-outlined">work</span></div>
-                                                </div>
-                                                <div class="flex flex-1 flex-col py-3">
-                                                    <p
-                                                        class="text-base font-medium leading-normal text-gray-900 dark:text-white">
-                                                        Junior Web Developer</p>
-                                                    <p
-                                                        class="text-base font-normal leading-normal text-gray-500 dark:text-gray-400">
-                                                        Code Start LLC | 2016 - 2018</p>
-                                                </div>
-                                            </div>
+                            </div>
+                            <div class="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 text-left">
+                                <div class="flex flex-col gap-6">
+                                    <h3
+                                        class="text-gray-900 dark:text-white text-lg font-semibold leading-tight tracking-[-0.015em]">
+                                        Experiencia</h3>
+                                    <div class="grid grid-cols-[40px_1fr] gap-x-2">
+                                        <div class="flex flex-col items-center gap-1 pt-3">
+                                            <div class="text-gray-900 dark:text-white"><span
+                                                    class="material-symbols-outlined">work</span></div>
+                                            <div class="w-[1.5px] bg-gray-300 dark:bg-gray-700 h-2 grow"></div>
                                         </div>
-                                        <div class="flex flex-col gap-6">
-                                            <h3
-                                                class="text-gray-900 dark:text-white text-lg font-semibold leading-tight tracking-[-0.015em]">
-                                                Skills</h3>
-                                            <div class="flex flex-col gap-4">
-                                                <div class="flex flex-col gap-2">
-                                                    <h4 class="font-semibold text-gray-900 dark:text-white">WEB</h4>
-                                                    <div class="flex flex-wrap gap-2">
-                                                        <span
-                                                            class="text-sm font-medium bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-gray-300 px-3 py-1 rounded-full">Aplicaciones webs</span>
-                                                        <span
-                                                            class="text-sm font-medium bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-gray-300 px-3 py-1 rounded-full">Paginas Webs</span>
-                                                            <span
-                                                                class="text-sm font-medium bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-gray-300 px-3 py-1 rounded-full">Landings pages</span>
-                                                    </div>
-                                                </div>
-                                                <div class="flex flex-col gap-2">
-                                                    <h4 class="font-semibold text-gray-900 dark:text-white">PC</h4>
-                                                    <div class="flex flex-wrap gap-2">
-                                                        <span
-                                                            class="text-sm font-medium bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-gray-300 px-3 py-1 rounded-full">Actualizacion de software</span>
-                                                        <span
-                                                            class="text-sm font-medium bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-gray-300 px-3 py-1 rounded-full">Mantenimiento de componentes</span>
-                                                        <span
-                                                            class="text-sm font-medium bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-gray-300 px-3 py-1 rounded-full">Armados de pc</span>
-                                                    </div>
-                                                </div>
-                                                <div class="flex flex-col gap-2">
-                                                    <h4 class="font-semibold text-gray-900 dark:text-white">Impreciones 3d</h4>
-                                                    <div class="flex flex-wrap gap-2">
-                                                        <span
-                                                            class="text-sm font-medium bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-gray-300 px-3 py-1 rounded-full">Diseño 3d</span>
-                                                        <span
-                                                            class="text-sm font-medium bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-gray-300 px-3 py-1 rounded-full">Impresiones Personalizadas</span>
-                                                        <span
-                                                            class="text-sm font-medium bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-gray-300 px-3 py-1 rounded-full">Figma</span>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="flex flex-1 flex-col py-3">
+                                            <p
+                                                class="text-base font-medium leading-normal text-gray-900 dark:text-white">
+                                                Senior Software Engineer</p>
+                                            <p
+                                                class="text-base font-normal leading-normal text-gray-500 dark:text-gray-400">
+                                                Tech Solutions Inc. | 2020 - Present</p>
                                         </div>
-                                    </div>
-                                </section>
-                                <section class="flex flex-col gap-6" id="projects">
-                                    <h2
-                                        class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">
-                                        Projects</h2>
-                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                        <div
-                                            class="flex flex-col gap-4 rounded-lg bg-white dark:bg-white/5 p-4 border border-gray-200 dark:border-white/10">
-                                            <div class="w-full aspect-[16/9] rounded-md bg-cover bg-center"
-                                                data-alt="Screenshot of a corporate dashboard project"
-                                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD2-GQ5o-RVuPBK5fQYhBuWT5Q1KjBwhu6MXmHxUw2SupNECn1NeZR3ko8ZiARvTB2XQlqru7gh4jE_I8oYeXRiXHXpkQqd4B5KCGqysl8EJGsFU_LWd0MksZAkZE_hABZdRNUIbrqcSRP8-T2DrArE3zxejw9c-MtNtIUrk3OxmDuDZhQCUPfkxABtvPbqrtNaEoPeaZOy1_I_j5GW9dEQD8jdDgU6SS3i8fiT2Fay6z0nbR4T955avKvnieDaHkNLdA6xYr8CcqM');">
-                                            </div>
-                                            <div class="flex flex-col gap-2">
-                                                <h3 class="font-bold text-lg text-gray-900 dark:text-white">Administrador de Flota Automotor
-                                                </h3>
-                                                <p class="text-sm text-gray-600 dark:text-gray-400">App web para administrar y llevar un control de las unidades veiculares de tu empresa.</p>
-                                                <div class="flex flex-wrap gap-2 pt-2">
-                                                    <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">Laravel</span>
-                                                    <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">HTML</span>
-                                                    <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">CSS</span>
-                                                    <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">JS</span>
-                                                    <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">MYSQL</span>
-                                                </div>
-                                            </div>
+                                        <div class="flex flex-col items-center gap-1">
+                                            <div class="w-[1.5px] bg-gray-300 dark:bg-gray-700 h-2"></div>
+                                            <div class="text-gray-900 dark:text-white"><span
+                                                    class="material-symbols-outlined">work</span></div>
+                                            <div class="w-[1.5px] bg-gray-300 dark:bg-gray-700 h-2 grow"></div>
                                         </div>
-                                        <div
-                                            class="flex flex-col gap-4 rounded-lg bg-white dark:bg-white/5 p-4 border border-gray-200 dark:border-white/10">
-                                            <div class="w-full aspect-[16/9] rounded-md bg-cover bg-center"
-                                                data-alt="Screenshot of an e-commerce website project"
-                                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAM1DUtdviF4OKZfH77dwyMBCxBrn4XiegQ83_g5h7vBqjQBE0qHgcwULFkr3kQT-4yZgrZdfBCGykJQSA7zNOglloO5FSI2EGqDCfFyXrhu32GF6FMn1LlixvGZ4ZK0GFP2qdmclzhUqN2tTRaSV-ndk-uqVI4nrl91MW_ROjtBryvXb8kSs3kpxOJGpSr20Wy7Ydyg8f9zJVNviYHdhr1VfGSfCiZZ1WuX1iyrS9wBqtPOaJMYUsgH0sX2liVFt7crH5xwiaGS6w');">
-                                            </div>
-                                            <div class="flex flex-col gap-2">
-                                                <h3 class="font-bold text-lg text-gray-900 dark:text-white">FilApp
-                                                </h3>
-                                                <p class="text-sm text-gray-600 dark:text-gray-400">Aplicacion para organizar filas de clientes.</p>
-                                                <div class="flex flex-wrap gap-2 pt-2">
-                                                    <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">HTML</span>
-                                                    <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">CSS</span>
-                                                    <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">JS</span>
-                                                    <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">PHP</span>
-                                                    <span class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">MYSQL</span>
-                                                </div>
-                                            </div>
+                                        <div class="flex flex-1 flex-col py-3">
+                                            <p
+                                                class="text-base font-medium leading-normal text-gray-900 dark:text-white">
+                                                Mid-Level Developer</p>
+                                            <p
+                                                class="text-base font-normal leading-normal text-gray-500 dark:text-gray-400">
+                                                Web Innovators | 2018 - 2020</p>
                                         </div>
-                                    </div>
-                                </section>
-                                <section class="flex flex-col gap-6" id="pricing">
-                                    <h2
-                                        class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">
-                                        Pricing</h2>
-                                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                                        <div
-                                            class="flex flex-col gap-4 p-6 rounded-lg bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10">
-                                            <h3 class="font-bold text-lg text-gray-900 dark:text-white">App web</h3>
-                                            <p class="text-3xl font-black text-gray-900 dark:text-white">$150.000<span
-                                                    class="text-base font-medium text-gray-500 dark:text-gray-400"></span>
-                                            </p>
-                                            <p class="text-sm text-gray-600 dark:text-gray-400">.</p>
-                                            <button
-                                                class="w-full mt-auto flex items-center justify-center rounded-lg h-10 px-4 bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-white text-sm font-bold hover:bg-gray-300 dark:hover:bg-white/20 transition-colors">Contactar</button>
+                                        <div class="flex flex-col items-center gap-1 pb-3">
+                                            <div class="w-[1.5px] bg-gray-300 dark:bg-gray-700 h-2"></div>
+                                            <div class="text-gray-900 dark:text-white"><span
+                                                    class="material-symbols-outlined">work</span></div>
                                         </div>
-                                        <div
-                                            class="flex flex-col gap-4 p-6 rounded-lg bg-white dark:bg-white/5 border-2 border-primary relative">
-                                            <div
-                                                class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">
-                                                Most Popular</div>
-                                            <h3 class="font-bold text-lg text-gray-900 dark:text-white">Imprecion 3d</h3>
-                                            <p class="text-3xl font-black text-gray-900 dark:text-white">Personalizable</p>
-                                            <p class="text-sm text-gray-600 dark:text-gray-400"></p>
-                                            <button
-                                                class="w-full mt-auto flex items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold hover:opacity-90 transition-opacity">Contactar</button>
+                                        <div class="flex flex-1 flex-col py-3">
+                                            <p
+                                                class="text-base font-medium leading-normal text-gray-900 dark:text-white">
+                                                Junior Web Developer</p>
+                                            <p
+                                                class="text-base font-normal leading-normal text-gray-500 dark:text-gray-400">
+                                                Code Start LLC | 2016 - 2018</p>
                                         </div>
-                                        <div
-                                            class="flex flex-col gap-4 p-6 rounded-lg bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10">
-                                            <h3 class="font-bold text-lg text-gray-900 dark:text-white">Mantenimiento PC</h3>
-                                            <p class="text-3xl font-black text-gray-900 dark:text-white">$20.000<span
-                                                    class="text-base font-medium text-gray-500 dark:text-gray-400"></span>
-                                            </p>
-                                            <p class="text-sm text-gray-600 dark:text-gray-400">Mantenimiento y optimizacion de Pc.</p>
-                                            <button
-                                                class="w-full mt-auto flex items-center justify-center rounded-lg h-10 px-4 bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-white text-sm font-bold hover:bg-gray-300 dark:hover:bg-white/20 transition-colors">Contact</button>
-                                        </div>
-                                    </div>
-                                </section>
-                                <section class="flex flex-col gap-6" id="contact">
-                                    <h2
-                                        class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">
-                                        Contact</h2>
-                                    <div
-                                        class="p-6 rounded-lg bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10">
-                                        <form class="flex flex-col gap-4">
-                                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                                <div>
-                                                    <label
-                                                        class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
-                                                        for="name">Nombre</label>
-                                                    <input
-                                                        class="w-full rounded-md border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark text-gray-900 dark:text-white focus:ring-primary focus:border-primary"
-                                                        id="name" name="name" type="text" />
-                                                </div>
-                                                <div>
-                                                    <label
-                                                        class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
-                                                        for="email">Mail</label>
-                                                    <input
-                                                        class="w-full rounded-md border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark text-gray-900 dark:text-white focus:ring-primary focus:border-primary"
-                                                        id="email" name="email" type="email" />
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
-                                                    for="subject">Asunto</label>
-                                                <input
-                                                    class="w-full rounded-md border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark text-gray-900 dark:text-white focus:ring-primary focus:border-primary"
-                                                    id="subject" name="subject" type="text" />
-                                            </div>
-                                            <div>
-                                                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
-                                                    for="message">Mensaje</label>
-                                                <textarea
-                                                    class="w-full rounded-md border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark text-gray-900 dark:text-white focus:ring-primary focus:border-primary"
-                                                    id="message" name="message" rows="5"></textarea>
-                                            </div>
-                                            <div class="flex justify-end">
-                                                <button
-                                                    class="flex items-center justify-center rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold hover:opacity-90 transition-opacity"
-                                                    type="submit">Enviar Mensaje</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </section>
-                            </main>
-                            <footer
-                                class="w-full mt-auto border-t border-solid border-gray-200/50 dark:border-white/10 px-6 sm:px-10 py-6">
-                                <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">© 2025 GuidoTech. All rights reserved.
-                                    </p>
-                                    <div class="flex gap-4">
-                                        <a class="text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors"
-                                            href="#">
-                                            <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                                                <path clip-rule="evenodd"
-                                                    d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z"
-                                                    fill-rule="evenodd"></path>
-                                            </svg>
-                                        </a>
-                                        <a class="text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors"
-                                            href="#">
-                                            <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M22.23 2.003a.999.999 0 00-1.157-.134l-9.11 4.555a1 1 0 00-.51.905v.002c0 .025.002.05.006.074L13.07 18.9a1 1 0 001.385.51l5.908-3.545a1 1 0 00.552-1.317l-3.92-9.395a1 1 0 00-.165-.35zM5.311 11.239l2.45 7.35a1 1 0 001.386.51l5.908-3.545a1 1 0 00.552-1.317L9.72 4.84a1 1 0 00-1.32-.553l-2.45 1.225a1 1 0 00-.639.907v4.82z">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                        <a class="text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors"
-                                            href="#">
-                                            <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
-                                                </path>
-                                            </svg>
-                                        </a>
                                     </div>
                                 </div>
-                            </footer>
+                                <div class="flex flex-col gap-6">
+                                    <h3
+                                        class="text-gray-900 dark:text-white text-lg font-semibold leading-tight tracking-[-0.015em]">
+                                        Skills</h3>
+                                    <div class="flex flex-col gap-4">
+                                        <div class="flex flex-col gap-2">
+                                            <h4 class="font-semibold text-gray-900 dark:text-white">WEB</h4>
+                                            <div class="flex flex-wrap gap-2">
+                                                <span
+                                                    class="text-sm font-medium bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-gray-300 px-3 py-1 rounded-full">Aplicaciones
+                                                    webs</span>
+                                                <span
+                                                    class="text-sm font-medium bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-gray-300 px-3 py-1 rounded-full">Paginas
+                                                    Webs</span>
+                                                <span
+                                                    class="text-sm font-medium bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-gray-300 px-3 py-1 rounded-full">Landings
+                                                    pages</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-2">
+                                            <h4 class="font-semibold text-gray-900 dark:text-white">PC</h4>
+                                            <div class="flex flex-wrap gap-2">
+                                                <span
+                                                    class="text-sm font-medium bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-gray-300 px-3 py-1 rounded-full">Actualizacion
+                                                    de software</span>
+                                                <span
+                                                    class="text-sm font-medium bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-gray-300 px-3 py-1 rounded-full">Mantenimiento
+                                                    de componentes</span>
+                                                <span
+                                                    class="text-sm font-medium bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-gray-300 px-3 py-1 rounded-full">Armados
+                                                    de pc</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-2">
+                                            <h4 class="font-semibold text-gray-900 dark:text-white">Impreciones 3d</h4>
+                                            <div class="flex flex-wrap gap-2">
+                                                <span
+                                                    class="text-sm font-medium bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-gray-300 px-3 py-1 rounded-full">Diseño
+                                                    3d</span>
+                                                <span
+                                                    class="text-sm font-medium bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-gray-300 px-3 py-1 rounded-full">Impresiones
+                                                    Personalizadas</span>
+                                                <span
+                                                    class="text-sm font-medium bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-gray-300 px-3 py-1 rounded-full">Figma</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- CARRUZEL -->
+                        <section class="flex flex-col gap-6" id="projects">
+                            <h2
+                                class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">
+                                Trabajos
+                            </h2>
+
+                            <div class="relative overflow-hidden">
+                                <!-- Contenedor de proyectos -->
+                                <div id="carousel" class="flex transition-transform duration-300 gap-8">
+                                    <!-- Proyecto 1 -->
+                                    <div
+                                        class="flex-shrink-0 w-full md:w-1/2 flex flex-col gap-4 rounded-lg bg-white dark:bg-white/5 p-4 border border-gray-200 dark:border-white/10">
+                                        <div class="w-full aspect-[16/9] rounded-md bg-cover bg-center"
+                                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD2-GQ5o-RVuPBK5fQYhBuWT5Q1KjBwhu6MXmHxUw2SupNECn1NeZR3ko8ZiARvTB2XQlqru7gh4jE_I8oYeXRiXHXpkQqd4B5KCGqysl8EJGsFU_LWd0MksZAkZE_hABZdRNUIbrqcSRP8-T2DrArE3zxejw9c-MtNtIUrk3OxmDuDZhQCUPfkxABtvPbqrtNaEoPeaZOy1_I_j5GW9dEQD8jdDgU6SS3i8fiT2Fay6z0nbR4T955avKvnieDaHkNLdA6xYr8CcqM');">
+                                        </div>
+                                        <div class="flex flex-col gap-2">
+                                            <h3 class="font-bold text-lg text-gray-900 dark:text-white">Administrador de
+                                                Flota Automotor</h3>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">App web para administrar
+                                                y llevar un control de las unidades veiculares de tu empresa.</p>
+                                            <div class="flex flex-wrap gap-2 pt-2">
+                                                <span
+                                                    class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">Laravel</span>
+                                                <span
+                                                    class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">HTML</span>
+                                                <span
+                                                    class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">CSS</span>
+                                                <span
+                                                    class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">JS</span>
+                                                <span
+                                                    class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">MYSQL</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Proyecto 2 -->
+                                    <div
+                                        class="flex-shrink-0 w-full md:w-1/2 flex flex-col gap-4 rounded-lg bg-white dark:bg-white/5 p-4 border border-gray-200 dark:border-white/10">
+                                        <div class="w-full aspect-[16/9] rounded-md bg-cover bg-center"
+                                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAM1DUtdviF4OKZfH77dwyMBCxBrn4XiegQ83_g5h7vBqjQBE0qHgcwULFkr3kQT-4yZgrZdfBCGykJQSA7zNOglloO5FSI2EGqDCfFyXrhu32GF6FMn1LlixvGZ4ZK0GFP2qdmclzhUqN2tTRaSV-ndk-uqVI4nrl91MW_ROjtBryvXb8kSs3kpxOJGpSr20Wy7Ydyg8f9zJVNviYHdhr1VfGSfCiZZ1WuX1iyrS9wBqtPOaJMYUsgH0sX2liVFt7crH5xwiaGS6w');">
+                                        </div>
+                                        <div class="flex flex-col gap-2">
+                                            <h3 class="font-bold text-lg text-gray-900 dark:text-white">FilApp</h3>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">Aplicacion para
+                                                organizar filas de clientes.</p>
+                                            <div class="flex flex-wrap gap-2 pt-2">
+                                                <span
+                                                    class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">HTML</span>
+                                                <span
+                                                    class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">CSS</span>
+                                                <span
+                                                    class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">JS</span>
+                                                <span
+                                                    class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">PHP</span>
+                                                <span
+                                                    class="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">MYSQL</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Botones de navegación -->
+                                <button id="prev"
+                                    class="absolute top-1/2 left-2 -translate-y-1/2 bg-white dark:bg-gray-800 p-2 rounded-full shadow-md">◀</button>
+                                <button id="next"
+                                    class="absolute top-1/2 right-2 -translate-y-1/2 bg-white dark:bg-gray-800 p-2 rounded-full shadow-md">▶</button>
+                            </div>
+                        </section>
+
+
+
+
+
+
+
+
+                        <section class="flex flex-col gap-6" id="pricing">
+                            <h2
+                                class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">
+                                Precios</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                <div
+                                    class="flex flex-col gap-4 p-6 rounded-lg bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10">
+                                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">App web</h3>
+                                    <p class="text-3xl font-black text-gray-900 dark:text-white">$150.000<span
+                                            class="text-base font-medium text-gray-500 dark:text-gray-400"></span>
+                                    </p>
+                                    <p class="text-sm text-gray-600 dark:text-gray-400">
+                                    <ul>🧱 Diseño y desarrollo personalizado con tecnologías modernas</ul>
+                                    <ul>⚙️ Creación de paneles de administración y bases de datos</ul>
+                                    <ul>📱 Diseño adaptable a PC, tablet y móvil (responsive design)</ul>
+                                    <ul>🔐 Configuración de seguridad básica (encriptación, formularios seguros, etc.)
+                                    </ul>
+                                    <ul>🧭 Optimización de velocidad y rendimiento</ul>
+                                    <ul>🧾 Entrega con documentación y capacitación básica de uso</ul>
+                                    <ul>🛠️ Soporte técnico post-entrega (por tiempo limitado)</ul>
+                                    </p>
+                                    <a
+                                        href="https://wa.me/549XXXXXXXXX?text=hola%20GuidoTech%20quisiera%20consultarte%20por%20tu%20servicio%20de%20aplicaciones%20web">
+                                        <button
+                                            class="w-full mt-auto flex items-center justify-center rounded-lg h-10 px-4 bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-white text-sm font-bold hover:bg-gray-300 dark:hover:bg-white/20 transition-colors">Contactar</button>
+                                    </a>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-4 p-6 rounded-lg bg-white dark:bg-white/5 border-2 border-primary relative">
+                                    <div
+                                        class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">
+                                        Most Popular</div>
+                                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">Imprecion 3d</h3>
+                                    <p class="text-3xl font-black text-gray-900 dark:text-white">Personalizable</p>
+                                    <p class="text-sm text-gray-600 dark:text-gray-400">
+                                    <ul>🖨️ Impresión 3D de llaveros personalizados</ul>
+                                    <ul>📐 Diseño y modelado 3D personalizado</ul>
+                                    <ul>🎨 Elección de color, tamaño y tipo de acabado</ul>
+                                    <ul>🧠 Asesoramiento técnico en diseño y funcionalidad</ul>
+                                    <ul>📦 Preparación y ajuste de archivos STL o STEP</ul>
+                                    <ul>🚚 Envio gratis por zona sur</ul>
+                                    </p>
+                                    <a href="https://wa.me/549XXXXXXXXX?text=hola%20GuidoTech%20quisiera%20consultarte%20por%20tu%20servicio%20de%20impresion%203D
+">
+                                        <button
+                                            class="w-full mt-auto flex items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold hover:opacity-90 transition-opacity">Contactar</button>
+                                    </a>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-4 p-6 rounded-lg bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10">
+                                    <h3 class="font-bold text-lg text-gray-900 dark:text-white">Mantenimiento PC</h3>
+                                    <p class="text-3xl font-black text-gray-900 dark:text-white">$20.000<span
+                                            class="text-base font-medium text-gray-500 dark:text-gray-400"></span>
+                                    </p>
+                                    <p class="text-sm text-gray-600 dark:text-gray-400">
+
+                                    <ul>🔄 Actualización de Windows y drivers</ul>
+
+                                    <ul>🧹 Limpieza profunda de componentes internos y externos</ul>
+
+                                    <ul>❄️ Cambio de pasta térmica del procesador y GPU</ul>
+
+                                    <ul>⚙️ Optimización de arranque y procesos del sistema</ul>
+
+                                    <ul>🧠 Revisión completa de hardware (RAM, disco, fuente, temperatura, etc.)</ul>
+
+                                    <ul>🧾 Informe de estado general y recomendaciones de mejora</ul>
+
+                                    <ul>☁️ Respaldo básico de archivos importantes</ul>
+
+                                    <ul>🔌 Control y gestión de conexiones, ventiladores y rendimiento</ul>
+                                    </p>
+                                    <a
+                                        href="https://wa.me/549XXXXXXXXX?text=hola%20GuidoTech%20quisiera%20consultarte%20por%20tu%20servicio%20de%20mantenimiento%20de%20PC">
+                                        <button
+                                            class="w-full mt-auto flex items-center justify-center rounded-lg h-10 px-4 bg-gray-200 dark:bg-white/10 text-gray-800 dark:text-white text-sm font-bold hover:bg-gray-300 dark:hover:bg-white/20 transition-colors">Contact</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="flex flex-col gap-6" id="contact">
+                            <h2
+                                class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">
+                                Contacto</h2>
+                            <div
+                                class="p-6 rounded-lg bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10">
+                                <form class="flex flex-col gap-4">
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                        <div>
+                                            <label
+                                                class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                                                for="name">Nombre</label>
+                                            <input
+                                                class="w-full rounded-md border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark text-gray-900 dark:text-white focus:ring-primary focus:border-primary"
+                                                id="name" name="name" type="text" />
+                                        </div>
+                                        <div>
+                                            <label
+                                                class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                                                for="email">Mail</label>
+                                            <input
+                                                class="w-full rounded-md border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark text-gray-900 dark:text-white focus:ring-primary focus:border-primary"
+                                                id="email" name="email" type="email" />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                                            for="subject">Asunto</label>
+                                        <input
+                                            class="w-full rounded-md border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark text-gray-900 dark:text-white focus:ring-primary focus:border-primary"
+                                            id="subject" name="subject" type="text" />
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                                            for="message">Mensaje</label>
+                                        <textarea
+                                            class="w-full rounded-md border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark text-gray-900 dark:text-white focus:ring-primary focus:border-primary"
+                                            id="message" name="message" rows="5"></textarea>
+                                    </div>
+                                    <div class="flex justify-end">
+                                        <button
+                                            class="flex items-center justify-center rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold hover:opacity-90 transition-opacity"
+                                            type="submit">Enviar Mensaje</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </section>
+                    </main>
+                    <footer
+                        class="w-full mt-auto border-t border-solid border-gray-200/50 dark:border-white/10 px-6 sm:px-10 py-6">
+                        <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+                            <p class="text-sm text-gray-500 dark:text-gray-400">© 2025 GuidoTech. All rights reserved.
+                            </p>
+                            <div class="flex gap-4">
+                                <a class="text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors"
+                                    href="#">
+                                    <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path clip-rule="evenodd"
+                                            d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z"
+                                            fill-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                                <a class="text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors"
+                                    href="#">
+                                    <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M22.23 2.003a.999.999 0 00-1.157-.134l-9.11 4.555a1 1 0 00-.51.905v.002c0 .025.002.05.006.074L13.07 18.9a1 1 0 001.385.51l5.908-3.545a1 1 0 00.552-1.317l-3.92-9.395a1 1 0 00-.165-.35zM5.311 11.239l2.45 7.35a1 1 0 001.386.51l5.908-3.545a1 1 0 00.552-1.317L9.72 4.84a1 1 0 00-1.32-.553l-2.45 1.225a1 1 0 00-.639.907v4.82z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a class="text-gray-500 hover:text-primary dark:text-gray-400 dark:hover:text-primary transition-colors"
+                                    href="#">
+                                    <svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
-                    </div>
+                    </footer>
                 </div>
             </div>
+        </div>
+    </div>
 </body>
 
 </html>

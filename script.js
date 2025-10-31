@@ -20,3 +20,32 @@ tailwind.config = {
         },
     },
 };
+
+
+
+
+// Carrusel simple de proyectos
+const carousel = document.getElementById('carousel');
+const prev = document.getElementById('prev');
+const next = document.getElementById('next');
+
+let index = 0;
+const total = carousel.children.length;
+
+function updateCarousel() {
+    const width = carousel.children[0].offsetWidth + 32; // ancho + gap
+    carousel.style.transform = `translateX(-${index * width}px)`;
+}
+
+prev.addEventListener('click', () => {
+    index = (index - 1 + total) % total;
+    updateCarousel();
+});
+
+next.addEventListener('click', () => {
+    index = (index + 1) % total;
+    updateCarousel();
+});
+
+window.addEventListener('resize', updateCarousel);
+
